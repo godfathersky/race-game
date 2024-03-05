@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta name = "author" content = "Robert Zima">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/CSS" href="style.css">
+        <script type="text/javascript" src = "./script/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Welcome to the track!</h1>
+                <h3>quarter mile racing</h3>
+            </div>
+            <div class="race">
+                <div class="road">
+                    <div class="track1"><p>#1</p><img src="./img/car1.png" id = "carA"></div>
+                    <div class="track2"><p>#2</p><img src="./img/car2.png" id = "carB"></div>
+                    <div class="track3"><p>#3</p><img src="./img/car3.png" id = "carC"></div>
+                    <div class="track4"><p>#4</p><img src="./img/car4.png" id = "carD"></div>
+                </div>
+                <div class="meta">
+                    <div class="square1">
+                        <div class="squareA"></div>
+                        <div class="squareB"></div>
+                    </div>
+                    <div class="square2">
+                        <div class="squareB"></div>
+                        <div class="squareA"></div>
+                    </div>
+                    <div class="square3">
+                        <div class="squareA"></div>
+                        <div class="squareB"></div>
+                    </div>
+                    <div class="square4">
+                        <div class="squareB"></div>
+                        <div class="squareA"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="buttons">
+                    <div class="start">
+                        <button id="start">start</button>
+                    </div>
+                    <div class="reset">
+                        <button id="reset">reset</button>
+                    </div>
+                </div>
+                <div class="winner">
+                    <h2 id = "winner"></h2>
+                </div>
+                <div class="interface">
+                    <div class="cars">
+                        <h4>Choose the car to win:</h4>
+                        <div class="car1">
+                            <label class = "carinfo" for = "car1"><img src = "img/car1.png" id = "carA"></label>
+                            <input id = "car1" type = "radio" name = "radio">
+                        </div>
+                        <div class="car2">
+                            <label class = "carinfo" for = "car2"><img src = "img/car2.png" id = "carB"></label>
+                            <input id = "car2" type = "radio" name = "radio">
+                        </div>
+                        <div class="car3">
+                            <label class = "carinfo" for = "car3"><img src = "img/car3.png" id = "carC"></label>
+                            <input id = "car3" type = "radio" name = "radio">
+                        </div>
+                        <div class="car4">
+                            <label class = "carinfo" for = "car4"><img src = "img/car4.png" id = "carD"></label>
+                            <input id = "car4" type = "radio" name = "radio">
+                        </div>
+                    </div>
+                    <div class="bet">
+                        <input id = "bet" type = "submit" value = "bet">
+                        <input type = "text" placeholder="place a bet">
+                    </div>
+                    <div class="cash">
+                        <p id = "cash">Cash: 1234567890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
